@@ -55,8 +55,45 @@
   margin: 0 auto;
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .container {
     background-color: red;
   }
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__list {
+  position: relative;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+.header__list::before {
+  display: flex;
+  position: absolute;
+  width: 0;
+  content: "";
+  height: 2px;
+  background-color: #fff;
+  bottom: -1px;
+  transition: width 0.3s ease-in-out;
+}
+.header__list:hover {
+  opacity: 0.5;
+}
+.header__list:hover::before {
+  width: 100%;
+}
+.header__list.active::before {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  content: "";
+  height: 2px;
+  background-color: #fff;
+  bottom: -1px;
+  transition: width 0.3s ease-in-out;
 }/*# sourceMappingURL=main-style.min.css.map */

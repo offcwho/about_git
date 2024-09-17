@@ -1,1 +1,44 @@
 // header style
+.header{
+    &__container{
+
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__list{
+        position: relative;
+        list-style: none;
+        transition: all 0.3s ease-in-out;
+        &::before{
+            display: flex;
+            position: absolute;
+            width: 0;
+            content: "";
+            height: 2px;
+            background-color: #fff;
+            bottom: -1px;
+            transition: width 0.3s ease-in-out;
+        }
+        &:hover{
+            opacity: 0.5;
+            &::before{
+                width: 100%;
+            }
+        }
+        &.active{
+            &::before{
+                display: flex;
+                position: absolute;
+                width: 100%;
+                content: "";
+                height: 2px;
+                background-color: #fff;
+                bottom: -1px;
+                transition: width 0.3s ease-in-out;
+            }
+        }
+    }
+}
