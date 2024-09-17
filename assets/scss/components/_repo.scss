@@ -1,0 +1,19 @@
+.repo{
+    height: 100vh;
+    background-color: #111;
+    &__container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title{
+        position: relative;
+        font-size: 58px;
+    }
+    &__description{
+        text-align: center;
+        font-size: 45px;
+    }
+}

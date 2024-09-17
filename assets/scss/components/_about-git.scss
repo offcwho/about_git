@@ -19,16 +19,20 @@
         justify-content: center;
     }
     &__image{
+        position: relative;
         width: 200px;
         background-color: #111;
         border-radius: 50%;
     }
     &__title{
+        position: relative;
         font-size: 58px;
     }
     &__description{
+        position: relative;
         margin: 0;
         font-size: 45px;
         text-align: center;
+        z-index: 0;
     }
 }

@@ -17,13 +17,13 @@
         <header class="application__header header" id="header">
             <!-- контент шапки сайта -->
             <div class="container header__container">
-                <nav class="header__nav">
+                <nav class="header__nav" id="scrollto">
                     <menu class="header__menu">
                         <li class="header__list active">
-                            <a href="#main" class="header__link">GitHub</a>
+                            <a href="#element1" class="header__link">GitHub</a>
                         </li>
                         <li class="header__list">
-                            <a href="" class="header__link">/</a>
+                            <a href="#element2" class="header__link">/</a>
                         </li>
                         <li class="header__list">
                             <a href="" class="header__link">/</a>
@@ -49,12 +49,18 @@
                 <!-- контент страницы сайта -->
                 <section class="main__section about-git">
                     <div class="container about-git__container">
-                        <img src="/assets/img/1660696499_26-kartinkin-net-p-oboi-dlya-programmistov-krasivo-33.jpg" alt="" class="about-git__background">
-                        <img src="/assets/img/github-mark-white.svg" alt="" class="about-git__image">
-                        <h1 class="about-git__title">GitHub</h1>
-                        <p class="about-git__description">Платформа, хранящая различные Git-репозитории на своих многочисленных серверах. Также GitHub называют крупнейшим веб-сервисом для хостинга и совместной разработки IT-проектов.</p>
+                        <img src="/assets/img/1660696499_26-kartinkin-net-p-oboi-dlya-programmistov-krasivo-33.jpg" alt="" class="about-git__background" id="background">
+                        <img src="/assets/img/github-mark-white.svg" alt="" class="about-git__image" id="aboutgit-logo">
+                        <h1 class="about-git__title" id="aboutgit-title">GitHub</h1>
+                        <p class="about-git__description" id="aboutgit-desc">Платформа, хранящая различные Git-репозитории на своих многочисленных серверах. Также GitHub называют крупнейшим веб-сервисом для хостинга и совместной разработки IT-проектов.</p>
                     </div>
-                </section>               
+                </section>
+                <section class="main__section repo">
+                    <div class="container repo__container">
+                        <h1 class="repo__title" id="repo-title">Репозитории</h1>
+                        <p class="repo__description">Место, где хранится проект. Он содержит все файлы и историю их изменений. <br> Репозитории позволяют разработчикам хранить, управлять и отслеживать, что поменялось или добавилось в коде и других файлах.</p>
+                    </div>
+                </section>          
             </div>
         </main>
         <footer class="application__footer footer">
