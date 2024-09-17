@@ -1,5 +1,13 @@
 // header style
 .header{
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: var(--header-height);
+    align-items: center;
+    border-bottom: 1px solid #000;
     &__container{
 
     }
@@ -12,6 +20,7 @@
         position: relative;
         list-style: none;
         transition: all 0.3s ease-in-out;
+        font-size: 24px;
         &::before{
             display: flex;
             position: absolute;

@@ -4,8 +4,10 @@
   --content-width: 1200px;
   --container-padding: 15px;
   --container-width: calc(var(--content-width) + (var(--container-padding) * 2));
+  --container-margin: 50px;
+  --header-height: 75px;
   --font-size: 16px;
-  --font-family: "SF UI", sans-serif;
+  --font-family: monospace;
 }
 
 @font-face {
@@ -61,6 +63,16 @@
   }
 }
 
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: var(--header-height);
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
 .header__menu {
   display: flex;
   align-items: center;
@@ -70,6 +82,7 @@
   position: relative;
   list-style: none;
   transition: all 0.3s ease-in-out;
+  font-size: 24px;
 }
 .header__list::before {
   display: flex;
@@ -96,4 +109,39 @@
   background-color: #fff;
   bottom: -1px;
   transition: width 0.3s ease-in-out;
+}
+
+.about-git {
+  height: 100vh;
+  position: relative;
+}
+.about-git__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  filter: blur(5px);
+}
+.about-git__container {
+  height: 100%;
+  padding: var(--header-height) 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-git__image {
+  width: 200px;
+  background-color: #111;
+  border-radius: 50%;
+}
+.about-git__title {
+  font-size: 58px;
+}
+.about-git__description {
+  margin: 0;
+  font-size: 45px;
+  text-align: center;
 }/*# sourceMappingURL=main-style.min.css.map */

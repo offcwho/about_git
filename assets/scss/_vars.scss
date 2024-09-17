@@ -8,6 +8,8 @@ $white: #fff;
     --content-width: 1200px;
     --container-padding: 15px;
     --container-width: calc(var(--content-width) + (var(--container-padding) * 2));
+    --container-margin: 50px;
+    --header-height: 75px;
     --font-size: 16px;
-    --font-family: 'SF UI', sans-serif;
+    --font-family: monospace;
 }
