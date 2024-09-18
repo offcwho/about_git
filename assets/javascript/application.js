@@ -13,3 +13,24 @@ window.addEventListener('scroll', function(){
     aboutgit_title.style.bottom = value * 1.5 + 'px';
     aboutgit_desc.style.left = value * 1.25 + 'px';
 })
+
+document.addEventListener('scroll', function() {
+    var elements = document.querySelectorAll('.animated');
+  
+    elements.forEach(function(element) {
+      if (isElementInViewport(element)) {
+        element.classList.add('show');
+      }
+    });
+  });
+  
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+  
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }

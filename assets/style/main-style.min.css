@@ -64,6 +64,15 @@
   }
 }
 
+.animated {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+.show {
+  opacity: 1;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -167,6 +176,38 @@
   font-size: 58px;
 }
 .repo__description {
+  text-align: center;
+  font-size: 45px;
+}
+
+.work {
+  height: 100vh;
+  position: relative;
+  background-color: #111;
+  z-index: 0;
+}
+.work__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.work__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+  filter: blur(5px) brightness(0.3);
+}
+.work__title {
+  font-size: 58px;
+}
+.work__desc {
   text-align: center;
   font-size: 45px;
 }/*# sourceMappingURL=main-style.min.css.map */
