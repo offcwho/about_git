@@ -234,4 +234,22 @@
 .gitbash__desc {
   font-size: 45px;
   text-align: center;
+}
+
+.commands {
+  height: 100vh;
+}
+.commands__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.commands__title {
+  font-size: 58px;
+}
+.commands__desc {
+  text-align: center;
+  font-size: 35px;
 }/*# sourceMappingURL=main-style.min.css.map */

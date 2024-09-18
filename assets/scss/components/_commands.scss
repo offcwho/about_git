@@ -1,0 +1,17 @@
+.commands{
+    height: 100vh;
+    &__container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__title{
+        font-size: 58px;
+    }
+    &__desc{
+        text-align: center;
+        font-size: 35px;
+    }
+}
