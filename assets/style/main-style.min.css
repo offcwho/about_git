@@ -132,15 +132,17 @@
   height: 100%;
   width: 100%;
   z-index: -1;
-  filter: blur(5px);
+  filter: blur(5px) brightness(0.7);
 }
 .about-git__container {
   height: 100%;
-  padding: var(--header-height) 0 0 0;
+  padding: var(--header-height) 300px 0 300px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
 }
 .about-git__image {
   position: relative;
@@ -210,4 +212,26 @@
 .work__desc {
   text-align: center;
   font-size: 45px;
+}
+
+.gitbash {
+  height: 100vh;
+  background-color: #000;
+}
+.gitbash__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gitbash__icon {
+  font-size: 200px;
+}
+.gitbash__title {
+  font-size: 58px;
+}
+.gitbash__desc {
+  font-size: 45px;
+  text-align: center;
 }/*# sourceMappingURL=main-style.min.css.map */
